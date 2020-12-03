@@ -1,6 +1,6 @@
-for i in $(cat input | sort -n) 
+for i in $(cat input_sorted) 
 do
-    for j in $(cat input | sort -n)
+    for j in $(cat input_sorted)
     do
         sum=$(( $i + $j ))
         if [[ sum -eq 2020 ]]; then
